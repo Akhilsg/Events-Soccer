@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        background-color: #e0e0e0;
+        padding: 20px;
+        margin: 0;
+      }
+      .email-container {
+        background-color: #ffffff;
+        padding: 24px;
+        border-radius: 4px;
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+          0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        color: #333;
+      }
+      .email-header {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      .email-body {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        margin-bottom: 16px;
+      }
+      .verify-link {
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #4caf50;
+        padding: 10px 20px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
+      .verify-link:hover {
+        background-color: #43a047;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <h1 class="email-header">Hello {username},</h1>
+      <p class="email-body">
+        Thank you for signing up for our service. Please click the link below to
+        verify your email address:
+      </p>
+      <p style="text-align: center">
+        <a href="{verificationLink}" class="verify-link">Verify Email</a>
+      </p>
+      <p class="email-body">This link will expire in one hour.</p>
+    </div>
+  </body>
+</html>

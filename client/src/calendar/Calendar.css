@@ -1,0 +1,291 @@
+.calendar {
+  border: 2px solid #f6f7fa;
+  border-radius: 16px;
+  padding-top: 10px;
+  background-color: #ffffff;
+}
+.calendar.dark {
+  background-color: #1c252e;
+  border: none;
+}
+
+.calendar .rbc-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6f7fa;
+  border-radius: 6px 6px 0 0;
+  padding: 10px;
+  border: none;
+  margin: 0;
+  border-bottom: 1px solid #e8effa;
+}
+.calendar.dark .rbc-toolbar {
+  background-color: #1c252e;
+  border-bottom: 1px solid rgba(145 158 171 / 0.16);
+}
+
+.calendar .rbc-row .calendar .rbc-toolbar button {
+  background-color: #004fd4;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.calendar.dark .rbc-toolbar button {
+  color: white;
+}
+
+.calendar .rbc-toolbar button:hover {
+  background-color: #e9ecf3;
+}
+.calendar.dark .rbc-btn-group button:hover {
+  background-color: inherit;
+  color: #90caf9;
+}
+
+.calendar .rbc-toolbar button:focus {
+  background-color: #e9ecf3;
+  color: #004fd4;
+  border-radius: 3px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.calendar.dark .rbc-toolbar button:focus {
+  background-color: inherit;
+  color: white;
+}
+
+.calendar .rbc-toolbar button:disabled {
+  background-color: #b3b3b3;
+  cursor: not-allowed;
+}
+
+.rbc-toolbar button:active,
+.rbc-toolbar button.rbc-active {
+  box-shadow: none;
+}
+
+.calendar .rbc-header {
+  color: #004fd4;
+  padding: 5px;
+  text-align: center;
+}
+.calendar.dark .rbc-header {
+  color: white;
+}
+
+.calendar .rbc-month-view .rbc-month-header {
+  border-bottom: 1px solid rgba(145 158 171 / 0.16);
+  align-items: center;
+  height: 48px;
+}
+
+.calendar button.rbc-button-link.rbc-show-more {
+  background-color: inherit;
+  font-size: 80%;
+  color: #004fd4;
+}
+.calendar.dark button.rbc-button-link.rbc-show-more {
+  color: white;
+}
+
+.calendar div.rbc-event.rbc-event-allday.rbc-event-continues-prior,
+.calendar div.rbc-event.rbc-event-continues-prior {
+  border: none;
+}
+
+.calendar div.rbc-event.rbc-event-allday.rbc-event-continues-after,
+.calendar div.rbc-event.rbc-event-continues-after {
+  background-color: #e8effa;
+  border-radius: 2;
+  color: #004fd4;
+  border-left: 4px solid #004fd4;
+  margin-left: -1px;
+  font-weight: 600;
+  text-decoration: none;
+  outline: none;
+  margin-bottom: 5px;
+}
+.calendar.dark div.rbc-event.rbc-event-allday.rbc-event-continues-after,
+.calendar.dark div.rbc-event.rbc-event-continues-after {
+  background-color: rgba(145 158 171 / 0.16);
+  color: #919eab;
+  border-left: 4px solid #919eab;
+}
+
+div.rbc-overlay {
+  border-radius: 4px;
+  padding: 1rem;
+}
+.calendar.dark div.rbc-overlay {
+  background-color: #14171acc;
+}
+
+.rbc-overlay-header {
+  padding-bottom: 10px;
+  color: black;
+  margin-bottom: 10px;
+}
+.calendar.dark .rbc-overlay-header {
+  color: white;
+}
+
+.calendar .rbc-toolbar .rbc-btn-group {
+  display: flex;
+  align-items: center;
+}
+
+.calendar .rbc-btn-group button {
+  background-color: transparent;
+  color: #004fd4;
+  font-size: 18px;
+  padding: 0;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.calendar .rbc-btn-group button:hover {
+  color: #0039a6;
+}
+
+.calendar .rbc-today {
+  background-color: #e8effa;
+  font-size: 12px;
+  color: #004fd4;
+}
+.calendar.dark .rbc-today {
+  background-color: rgba(145 158 171 / 0.08);
+}
+
+.calendar .rbc-toolbar .rbc-datepicker {
+  display: flex;
+  align-items: center;
+}
+
+.calendar .rbc-toolbar .rbc-datepicker-button {
+  background-color: #004fd4;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.calendar .rbc-toolbar .rbc-datepicker-button:hover {
+  background-color: #0039a6;
+}
+
+.calendar .rbc-button-link {
+  font-weight: 500;
+}
+
+.calendar .rbc-toolbar .rbc-toolbar-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #004fd4;
+  flex-grow: 1;
+  text-align: center;
+}
+.calendar.dark .rbc-toolbar .rbc-toolbar-label {
+  color: white;
+}
+
+.calendar .rbc-off-range-bg {
+  background-color: #f1f1f1;
+}
+
+.calendar .rbc-date-cell {
+  margin-top: 7.5px;
+  margin-right: 7.5px;
+}
+
+.calendar .rbc-month-view {
+  border: 1px solid #f6f7fa;
+}
+.calendar.dark .rbc-month-view {
+  border: none;
+}
+
+.calendar .rbc-day-bg + .rbc-day-bg {
+  border-left: 1px solid #f6f7fa;
+}
+.calendar.dark .rbc-day-bg + .rbc-day-bg {
+  border-left: 1px solid rgba(145 158 171 / 0.16);
+}
+
+.calendar .rbc-month-row + .rbc-month-row {
+  border-top: 1px solid #f6f7fa;
+}
+.calendar.dark .rbc-month-row + .rbc-month-row {
+  border-top: 0.5px solid rgba(145 158 171 / 0.16);
+  border-bottom: 0.5px solid rgba(145 158 171 / 0.16);
+}
+
+.calendar .rbc-date-cell > a {
+  font-size: 10px;
+}
+
+.calendar .rbc-event {
+  background-color: #e8effa;
+  border-radius: 2;
+  color: #004fd4;
+  border-left: 4px solid #004fd4;
+  margin-left: -1px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  outline: none;
+}
+.calendar.dark .rbc-event {
+  background-color: rgba(145 158 171 / 0.16);
+  color: #919eab;
+  border-left: 4px solid #919eab;
+}
+
+div.rbc-event {
+  background-color: #e8effa;
+  border-radius: 2;
+  color: #004fd4;
+  border-left: 4px solid #004fd4;
+  margin-left: -1px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  outline: none;
+}
+div.rbc-event {
+  background-color: rgba(145 158 171 / 0.16);
+  color: #919eab;
+  border-left: 4px solid #919eab;
+}
+
+.calendar .rbc-event:hover {
+  box-shadow: 0 0 2px 0 #0000001a;
+}
+
+.calendar .rbc-header + .rbc-header {
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.calendar .rbc-header {
+  font-weight: 400;
+  color: #b3b3b3;
+  border-bottom: none;
+}
+
+.calendar.dark .rbc-day-bg.rbc-off-range-bg {
+  background-color: rgba(145 158 171 / 0.04);
+}
+.calendar.dark .rbc-off-range-bg.rbc-button-link {
+  color: green;
+}
