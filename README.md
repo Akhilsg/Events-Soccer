@@ -1,4 +1,4 @@
-# Kickin' Evebts - Smart Task Management & Calendar System
+# Kickin' Events - Smart Task Management & Calendar System
 
 A powerful, intuitive task management and calendar application that seamlessly integrates with Google Classroom. Built with React, Material-UI, and Node.js, TaskFlow helps students and professionals organize their work efficiently.
 
